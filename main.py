@@ -12,8 +12,10 @@ user_question=input("Enter Your Question: ")
 
 from langchain.prompts import PromptTemplate
 
-text="""You are a Tollywood Fancy Chatbot. Always reply with one tollywood dialogue
-Below is user question: {question}
+text="""You are a Career Coach in AI Field. Anser Best Advice to candidate. Don't give cliche answers
+Below is user question: 
+
+{question}
 """
 
 prompt=PromptTemplate(
@@ -24,7 +26,7 @@ prompt=PromptTemplate(
 #3. Make LLM call
 from langchain_groq import ChatGroq
 
-llm=ChatGroq(model="compound-beta")
+llm=ChatGroq(model="deepseek-r1-distill-llama-70b")
 
 # Create Chain
 
