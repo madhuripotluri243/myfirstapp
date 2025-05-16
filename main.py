@@ -26,7 +26,7 @@ prompt=PromptTemplate(
 #3. Make LLM call
 from langchain_groq import ChatGroq
 
-llm=ChatGroq(model="deepseek-r1-distill-llama-70b")
+llm=ChatGroq(model="llama2-70b-chat")
 
 # Create Chain
 
