@@ -28,7 +28,7 @@ Below is user question:
     template=text
         )
 
-        llm=ChatGroq(model="deepseek-r1-distill-llama-70b")
+        llm=ChatGroq(model="llama2-70b-chat")
         chain=prompt | llm
 
         try:
